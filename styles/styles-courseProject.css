@@ -1,0 +1,49 @@
+.log-main > div {
+    display: inline-block;
+}
+
+.updatesLoc {
+    display: grid;
+    padding: 40px 60px;
+
+}
+
+.updatesBox {
+    display: grid;
+    width: 700px;
+    height: 100vh;
+    padding: 20px;
+    gap: 30px;
+
+    border-radius: 20px;
+    background-color: #f8fcf0;
+    font-family: 'Courier New', Courier, monospace, Georgia;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.btnSticky {
+    position: sticky;
+    top: 0px;
+}
+
+.btnLoc {
+    display: grid;
+    padding-top: 40px;
+    gap: 10px;
+
+}
+
+.btnAnchor {
+    display: flex;
+    height: 18.5px;
+    padding: 15px;
+    gap: 20px;
+
+    border-radius: 10px;
+    background-color: var(--navgreen)
+}
+
+.btnAnchorText {
+    font-size: 16px;
+}

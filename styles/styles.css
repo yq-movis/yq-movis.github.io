@@ -1,4 +1,12 @@
-*{
+:root {
+    --lightgreen: #548C72;
+    --darkgreen: #1e3d2f; 
+    --navgreen: #b9d9ca;
+}
+
+
+
+* {
     margin:0px;
     padding: 0px;
     text-decoration: none;
@@ -6,92 +14,135 @@
 
 body {
     display: flex;
-    /*width: 1440px;
-    height: 1024px;*/
     flex-direction: column;
     align-items: flex-start;
-    background-color:cornsilk;
+    background-color:#d9e6e8;
 }
 
-header {
+nav {
     display: flex;
-    height: 200px;
-    padding: 10px;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
+    height: 48px;
+    padding: 12px 60px;
+    background-color: #b9d9ca;
     align-self: stretch;
-    flex-direction: wrap;
-    justify-content: center;
-    flex: 1 0 0;
-    
-    color: #000;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 26px;
+    gap: 60px;
+}
+
+.logo {
+    position: relative;
+    margin-top: 0px;
+}
+
+.logo-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+   
+}
+
+img {
+    min-height: 48px; /*min = minimum value - will scale smaller imgs and make container*/
+    min-width: 48px;
+    height: inherit; /*use width of parent container unless override with class in img tag*/
+    width: inherit;
+    object-fit: contain; /*fit img in box, no img stretching*/
+}
+
+.tabsText {
+    margin-left: auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.tabsText a {
+    color: #548C72;
+    text-align: left;
+    font-family: 'Georgia','Courier New', Courier, monospace;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
 }
 
-main {
+
+.tabsText a:hover {
+    color:rgb(91, 67, 89);
+}
+
+.main {
     display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     gap: 10px;
-    flex: 1 0 0;
-    align-self: stretch;
 }
 
-.row{
-    border-radius: 26px;
-    background: burlywood;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.main-grid {
+    display: grid;
+}
+
+h1 {
+    color: #548C72;
+    text-align: left;
+    font-family: 'Georgia','Courier New', Courier, monospace;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h3 {
+    color: #1e3d2f;
+    font-family: Georgia, 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h2 {
+    color: #548C72;
+    text-align: left;
+    font-family: 'Georgia','Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h4 {
+    color:#1e3d2f;
+    font-family: 'Courier New', Courier, monospace, Georgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.pages-title {
     display: flex;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
+    padding-bottom: 40px;
+    justify-content: left;
 }
 
-.subpage{
-    width: 275px;
-    height: 275px;
-    border-radius: 26px;
-    align-content: center;
-    background: #FFF;
-    overflow: hidden;
-}
-
-.subpage-image{
-    width: 275px;
-    height: 275px;
-    flex-shrink: 0;
-}
-
-.label.container{
-
-}
-
-.subpage-title{
-
-}
 
 footer {
     display: flex;
+    height: 120px;
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
-    flex: 1 0 0;
+    align-items: center;
+    flex-shrink: 0;
     align-self: stretch;
 
-    color: #000;
+    color: burlywood;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: normal;
+    background-color: rgb(91, 67, 89);
 }

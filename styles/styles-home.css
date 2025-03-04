@@ -1,0 +1,49 @@
+.infoArea{
+    width: 1000px;
+    padding: 40px 0px 0px 60px;
+    display: grid;
+    justify-content: left;
+    gap: 30px;
+}
+
+header {
+    display: grid;
+    width: 1000px;
+    padding-top: 60px;
+    justify-content: left;
+    gap: 25px;
+}
+
+.subheader {
+    display: grid;
+    gap: 10px;
+}
+
+.subpageArea{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.subpage {
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+    background: #fff;
+}
+
+.subpage-image{
+    width: 320px;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+
+.column-image{
+    width: 406px;
+    flex-shrink: 0;
+}
