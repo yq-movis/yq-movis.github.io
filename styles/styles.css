@@ -2,9 +2,8 @@
     --lightgreen: #548C72;
     --darkgreen: #1e3d2f; 
     --navgreen: #b9d9ca;
+    --notwhite: #fbf8f1;
 }
-
-
 
 * {
     margin:0px;
@@ -17,6 +16,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color:#d9e6e8;
+}
+
+main {
+    min-height: 100vh;
 }
 
 nav {
@@ -145,3 +148,4 @@ footer {
     line-height: normal;
     background-color: rgb(91, 67, 89);
 }
+

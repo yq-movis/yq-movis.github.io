@@ -31,13 +31,11 @@
     display: flex;
     border-radius: 20px;
     background-color: rgb(245, 229, 204);
-    padding: 10px 0px;
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.20);
 }
 
 .middleText {
-    width: 390px;
-    height: 550px;
+    min-height: 706px;
     padding: 20px 35px;
 }
 
@@ -55,7 +53,7 @@
     padding: 20px;
     padding-top: 15px;
     border-radius: 10px;
-    background-color: #fbf8f1;
+    background-color: var(--notwhite);
     gap: 6px;
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.20);
 }
@@ -94,11 +92,53 @@ li {
     list-style: none;
 }
 
-.svg-container {
-    width: 406px;
+.svgAccordion {
+    display: grid;
+    position: relative;
+    width: 446px;
+    justify-items: center;
+}
+
+.svgAccordion-btn, .active {
+    width: 400px;
+    background-color: var(--navgreen);
+    cursor: pointer;
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--navgreen);
+    transition: background-color 0.3s;
+}
+
+.svgAccordion-btn:hover {
+    background-color: #abc8ba;
+    transition: background-color 0.3s;
+}
+
+.svgAccordion-btn:after {
+    content: '+';
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--darkgreen);
+    transition-duration: 0.2s;
+}
+
+.active.svgAccordion-btn:after {
+    transform: rotate(45deg);
+    transition-duration: 0.2s;
+}
+
+.svgDropdown {
+    display: flex;
+    width: 400px;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
+    transition-duration: 0.2s;
+    justify-content: center;
 }
 
 .svg-padding {

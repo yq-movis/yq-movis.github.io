@@ -36,11 +36,15 @@
 
                 <div class="btnLoc">
 
-                    <div class="btnAnchor"><h4 class="btnAnchorText">LOG 1: Ideation and Roles</h4></div>
+                    <a class="btnAnchor" href="#log1">
+                        <h4 class="btnAnchorText">LOG 1: Ideation and Roles</h4>
+                    </a>
+
                     <div class="btnAnchor"><h4 class="btnAnchorText">LOG 2: Proposal Presentation</h4></div>
                     <div class="btnAnchor"><h4 class="btnAnchorText">LOG 3: Developer Walkthrough</h4></div>
                     <div class="btnAnchor"><h4 class="btnAnchorText">LOG 4: Reading Week</h4></div>
                     <div class="btnAnchor"><h4 class="btnAnchorText">LOG 5: 2D Animation</h4></div>
+                    <div class="btnAnchor"><h4 class="btnAnchorText">LOG 6: 2D Assets</h4></div>
                     
                 </div>
 
@@ -54,7 +58,7 @@
                         <h2>: dev log</h2>
                     </div>
 
-                    <div class="updatesBox">
+                    <div id="log1" class="updatesBox">
 
                         <h3>log 1: 01/28-01/31</h3>
 
@@ -90,7 +94,7 @@
 
                     </div>
 
-                    <div class="updatesBox">
+                    <div id="log2" class="updatesBox">
 
                         <h3>log 2: 02/04-02/07</h3>
 
@@ -121,40 +125,9 @@
 
                     </div>
 
-                    <div class="updatesBox">
+                    <div id="log3" class="updatesBox">
 
-                        <h3>log 2: 02/04-02/07</h3>
-
-                        <p>
-                            This week, we had our project proposal presentations to the class. The other two groups were doing scrollytelling and the ideas they had were really cool! 
-
-                        </p>
-
-                        <p>
-                            I felt pretty good about the concept we were going for but because I missed the meeting, I felt like I wasn't doing enough to help out with the content. I heard that Yu-Wen was taking on a really big task of making all the wireframes herself and offered to lead a hand. Together, we decided to meet on Friday morning to discuss how the app will run and other possible interactions.
-                        </p>
-
-                        <p>
-                            Yu-Wen and I spent hours trying to make sense of AR and ideating about what we can do with it. We couldn't figure out want time of base shape would be best for AR tracking so we settled for a flat base to not have any possible obstructions and so that the 3D tokens would be able to lie on top of the base. I am very much a visual learner and made a bunch of sketches and rough mockups to help both me and Yu-Wen to visual how the elements within the app will look. I will insert some of those sketches here later. 
-                        </p>
-
-                        <p>
-                            We came up with hotspots on the AR model would work and the appear of a sidebar where educational information would be displayed. We had this idea to make an interactive mini game within each of these side bars to boost user engagement.
-                        </p>
-
-                        <p>
-                            For each of the 4 effector variables, we came up with two animations, and one mini game idea. Tnere would be one primary and one secondary animation that the user would be able to toggle after completing the mini game. The mine game would be a very simple interaction that gives the app some more playability while still presenting educational material. I will insert a table for each variable here later.
-                        </p>
-
-                        <p>
-                            The next step was to draft these rough mockups into cleaner wireframes for the developer walkthrough documentation. We went with Figma for this task so we could easily share and collaborate with everyone in the team.
-                        </p>
-
-                    </div>
-
-                    <div class="updatesBox">
-
-                        <h3>log 3: 02/11-02/14</h3>
+                        <h3>log 4: 02/11-02/14</h3>
 
                         <p>
                             Yu-Wen and I split the work for the developer walkthrough. She would be making all the animation storyboards and write up the interactions whereas I would be drawing the base island image and making the UI desgin and base wireframes. 
@@ -186,9 +159,9 @@
 
                     </div>
 
-                    <div class="updatesBox">
+                    <div id="log4" class="updatesBox">
 
-                        <h3>log 4: 02/17-02/25</h3>
+                        <h3>log 5: 02/17-02/25</h3>
 
                         <p>
                             I didn't do much for the project during the reading week orz
@@ -204,6 +177,80 @@
 
                     </div>
 
+                    <div id="log5" class="updatesBox">
+
+                        <h3>log 5: 03/04-03/09</h3>
+
+                        <p>
+                            I started creating the 2D assets for the mini-games this week. I didn't really know what would be the file types that would work the best for Unity so I figured I would make the animations first. My plan was to render the assets in Maya and then apply them in AE before exporting via Media Encoder.
+                        </p>
+
+                        <p>
+                           Stating with in Maya, I wanted to apply a toon shader on the models to give them an cartoony outline. I learned the hard way that EXR files cannot export the RBG data and the outlines together on a transparent background. The solution I found was to create a custom AOV that separately renders with the contour filter, creating two TIFFs; one for the RBG data and the other for the outlines. This process took a very long time with many fails. I will include pictures of them since they look quite funny. 
+                        </p>
+
+                        <p>
+                            I made a simple sequence for the boat to make it look like it's rocking on the water. I kept the animation to less than 24 frames and tried to make it as smooth as I could. To match the written text, I also rendered pieces of coral to be disrupted when the boat passes by. During this time, I didn't have the final colours of the models as Naomi and Yu-Wen were still working on the textures. I referenced Yu-Wen's initial drawings for this version's colours.
+                        </p>
+
+                        <p>
+                            For the mangroves, I decided to model the equipment for the two more complicated transplantion techniques. Creating the PVC pipe was a simple clinder and white shader. The wire mesh was VERY complicated. I used Instancers to create the wire tube that encloses the mangrove. I then followed a procedural modelling tutorial (will leave link here)to make the criss-cross wire pattern. Finally, I manuelly cut a hole in the middle for the wire tube as the boolean tools were not collaborating with the mesh...
+                        </p>
+
+                        <p>
+                            Once that was all exported as TIFFs, I began making a rough setup of the boat in the water in AE. I created flat assets like the garbage and net in Illustrator. I made sure to map out a safe zone for the layout so that nothing would be obsured by features on a phone screen. I will add the first draft animation here later.
+                        </p>
+
+                    </div>
+
+                    <div id="log6" class="updatesBox">
+
+                        <h3>log 6: 03/10-03/16</h3>
+
+                        <p>
+                            The feedback from my groupmates about the animated draft was good. I did need to change the colour of the models to be consistent with the AR models so this time, I decided to forgo the toon shader. The reason for this was that in AE there is the option to add strokes around the outline of an transparant image. The outlines within the models were not very visible and I thought the outer outline would suffice. 
+                        </p>
+                        
+                        <p>
+                            I met with Naomi and Jeah this week to talk about the animated files for Unity and about the mangrove mini-game. At the time, I wasn't super sure about the mechanism of the mini-game. I couldn't think of a way to layout the scene that would show players relevant visual information about each transplantion technique. Jeah suggested we could implement a drag-and-drop system where players would match the correct the transplantion technique to each terrain and water level. I thought that was a great idea as long as Jeah was able to make it in Unity.
+                        </p>
+
+                        <p>
+                            So back to Maya and AE I go. Animated sequences should be exported as either PNG sequences or transparent MP4s. I made a list of all the assets I needed to export and as what files to help myself keep track of all the moving parts. Once I was finished the animation and exported a video of the full sequence, I made a separate AE files to individually export the assets without the fading transitions. 
+                        </p>
+
+                        <p>
+                           
+                        </p>
+
+                        <p>
+                            
+                        </p>
+
+                    </div>
+
+                    <div id="log7" class="updatesBox">
+
+                        <h3>log 7: 03/18-03/22</h3>
+
+                        <p>
+                            The final week is upon us! My tasks this week is just to upload all the 2D files, update the wireframe a final time, and update the dev walkthrough and final presentation with any supplementary information or changes.
+                        </p>
+                        
+                        <p>
+                            I was delayed on Tuesday due to other committments that popped up the day of and needed to be done ASAP but thankfully, the delay did not cause too much setbacks for my groupmates.
+                        </p>
+
+                        <p>
+                            
+                        </p>
+
+                        <p>
+                            I'm very excited to see everyone's presentations next week!
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -215,7 +262,9 @@
     </main>
 
     <footer>
+
         &copy; 2025 Ya Qi Mo
+
     </footer>
 
 </body>
